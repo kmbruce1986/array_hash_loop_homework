@@ -17,11 +17,17 @@ stops.delete("Livingston")
 p stops
 #GITCOMMIT!
 # Delete "Cumbernauld" from the array by index
-
+stops.delete_at(2)
+p stops
 # How many stops there are in the array?
-
+p stops.count
 # How many ways can we return "Falkirk High" from the array?
-
+p stops[2]
+p stops.select{|word|word.length == 12}
+p stops.select{|word|word.include?("Falkirk High")}
 # Reverse the positions of the stops in the array
-
+p stops.reverse
 # Print out all the stops using a for loop
+for stop in stops
+  p stop
+end
